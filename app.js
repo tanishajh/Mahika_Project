@@ -23,7 +23,7 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.render("index");
 });
 
