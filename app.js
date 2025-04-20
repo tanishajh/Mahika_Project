@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const mongoose = require("mongoose");
-const Business = require("./models/index");
+
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/public", express.static("public"));
