@@ -9,28 +9,36 @@
   <body>
     <h2>Business Listings</h2>
 
-    <% if (businesses.length > 0) { %>
     <ul>
-      <% businesses.forEach(business => { %>
       <li>
-        <h3><%= business.businessName %></h3>
-        <p><strong>Location:</strong> <%= business.location %></p>
-        <p><strong>Products/Services:</strong> <%= business.products %></p>
-        <p><strong>Contact:</strong> <%= business.contactno %></p>
-        <p><strong>Email:</strong> <%= business.email %></p>
-
-        <!-- Delete Button -->
-        <form action="/delete-business/<%= business._id %>" method="POST">
-          <button type="submit" class="delete-btn">Delete</button>
-        </form>
+        <h3>Pooja Jhunjhunwala</h3>
+        <p><strong>Products/Services:</strong> Women's wear</p>
+        <p><strong>Contact:</strong> 9082003386</p>
       </li>
-      <% }) %>
+      <li>
+        <h3>Pooja Pawan Jhunjhunwala</h3>
+        <p>
+          <strong>Products/Services:</strong> Graphic designer (also does print
+          on tote bags)
+        </p>
+      </li>
+      <li>
+        <h3>Nidhi Sheldekar</h3>
+        <p><strong>Products/Services:</strong> Online dance class</p>
+      </li>
+      <li>
+        <h3>Kusum Harlalka</h3>
+        <p><strong>Products/Services:</strong> Sells bedsheets and sarees</p>
+      </li>
+      <li>
+        <h3>Seema Jhunjhunwala</h3>
+        <p>
+          <strong>Products/Services:</strong> Has business of snacks and makes
+          cakes also on order
+        </p>
+      </li>
     </ul>
-    <% } else { %>
-    <p>No businesses found.</p>
-    <% } %>
 
-    <!-- Back to Home -->
-    <a href="/home">Back to Home</a>
+    <a href="/">Back to Home</a>
   </body>
 </html>
