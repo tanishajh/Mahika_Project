@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = 3000;
 const mongoose = require("mongoose");
 const Business = require("./models/index");
 
@@ -18,8 +17,10 @@ async function main() {
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 }
 
-app.get("/", (req, res) => {
-  res.send("sucessful testing!");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
 
 app.get("/home", (req, res) => {
@@ -71,6 +72,6 @@ app.post("/delete-business/:id", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log("app is listening on port 3000");
 });
