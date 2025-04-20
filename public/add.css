@@ -1,0 +1,62 @@
+/* Base Reset & Font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+/* Heading */
+.form-container h2 {
+  margin-bottom: 24px;
+  font-size: 26px;
+  color: #d14a8c;
+}
+
+/* Input Fields */
+form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-color: #d14a8c;
+  outline: none;
+}
+
+/* Submit Button */
+form button {
+  background-color: #d14a8c;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #b43775;
+}

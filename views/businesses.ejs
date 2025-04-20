@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Businesses</title>
+    <link rel="stylesheet" href="/public/b.css" />
+  </head>
+  <body>
+    <h2>Business Listings</h2>
+
+    <% if (businesses.length > 0) { %>
+    <ul>
+      <% businesses.forEach(business => { %>
+      <li>
+        <h3><%= business.businessName %></h3>
+        <p><strong>Location:</strong> <%= business.location %></p>
+        <p><strong>Products/Services:</strong> <%= business.products %></p>
+        <p><strong>Contact:</strong> <%= business.contactno %></p>
+        <p><strong>Email:</strong> <%= business.email %></p>
+
+        <!-- Delete Button -->
+        <form action="/delete-business/<%= business._id %>" method="POST">
+          <button type="submit" class="delete-btn">Delete</button>
+        </form>
+      </li>
+      <% }) %>
+    </ul>
+    <% } else { %>
+    <p>No businesses found.</p>
+    <% } %>
+
+    <!-- Back to Home -->
+    <a href="/home">Back to Home</a>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base font and body styles */
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Merriweather", serif;
+}
+
+/* Heading styles */
+.heading h1,
+.heading h2 {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff; /* White for readability */
+  z-index: 2;
+  position: relative;
+  margin-top: 15rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 18rem;
+  width: 50rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heading h1:hover,
+.heading h2:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.heading h2 {
+  font-weight: 600;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.heading img {
+  width: 100vw;
+  height: 40rem;
+  object-fit: cover;
+  opacity: 0.8;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 1rem;
+  border-radius: 2px;
+}
+
+.heading {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-right: 0.5rem;
+}
+
+/* Action section button */
+.action-section {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.action-section button {
+  background-color: #b43775;  /* Purple used in featured section */
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50rem;
+}
+
+.action-section button:hover {
+  background-color: #8e2f6b;  /* Slightly darker purple for hover effect */
+}
+
+/* Featured Women-led Businesses Section */
+.featured-section {
+
+  border: 1px solid #b43775;  /* Purple border */
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.featured-section h2 {
+  color: #b43775;  /* Purple for section title */
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.featured-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.featured-card h3 {
+  color: #333333;  /* Darker text for headings */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.featured-card p {
+  color: #555555;  /* Slightly lighter text for content */
+  margin: 0.3rem 0;
+  line-height: 1.4;
+}
+
+.featured-card .links {
+  margin-top: 0.8rem;
+}
+
+.featured-card .links a {
+  color: #b43775;  /* Purple links */
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.featured-card .links a:hover {
+  text-decoration: underline;
+}
+
+/* Info Section */
+.info-section {
+  
+  border: 1px solid #b43775;  /* Light peach border */
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.info-section h2 {
+  color:#b43775;  /* Orange for section header */
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-intro {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.info-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  /* background: #ffffff; */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.2rem;
+  flex: 1 1 250px;
+}
+
+.info-card h3 {
+  color:#b43775;  /* Orange title color */
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.info-card ul {
+  list-style: disc inside;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Meet the Team Section */
+.team-section {
+  border: 1px solid #b43775;  /* Light peach border */
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.team-section h2 {
+  color: #b43775;  /* Orange for team header */
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.team-member {
+  border-radius: 8px;
+  padding: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  background-color: #b43775;  /* Purple footer background */
+  color: #f8f9fa;  /* White text */
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  margin-top: 2rem;
+}
+
+
+#view-business{
+    text-align: center;
+    margin-left:35rem;
+}
