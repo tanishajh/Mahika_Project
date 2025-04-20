@@ -19,7 +19,7 @@ app.get("/add-business", (req, res) => {
 });
 
 app.get("/businesses", async (req, res) => {
-  res.redirect("businesses.ejs");
+  res.redirect("businesses");
 });
 
 app.listen(PORT, () => {
